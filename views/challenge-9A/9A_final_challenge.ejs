@@ -1,0 +1,24 @@
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Rank</th>
+				<th>User</th>
+				<th>Score</th>
+				<th>Time</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+            <% for (let i = 0; i < 10; i++) { %>
+			<tr>
+				<td><%= i+1 %></td>
+				<td><%= arr1[i] %></td>
+				<td><%= arr2[i] %></td>
+				<td><%= arr3[i] %></td>
+				<td><img src="<%= arr4[i] %>" alt="flag"></td>
+			</tr>
+            <% } %>
+		</tbody>
+	</table>
+</div>
